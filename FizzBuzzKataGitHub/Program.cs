@@ -6,7 +6,10 @@ namespace FizzBuzzKataGitHub
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var c = new Converter();
+            // this should output FizzBuzz
+            Console.WriteLine(c.Convert(30));
+            Console.ReadLine();
         }
     }
 }
