@@ -10,7 +10,9 @@
         public string Convert(int input)
         {
             return IsDivisableByFive(input)
-                ? Buzz
+                ? IsDivisableByThree(input)
+                    ? FizzBuzz
+                    : Buzz
                 : IsDivisableByThree(input)
                     ? Fizz
                     : Hyphen;
