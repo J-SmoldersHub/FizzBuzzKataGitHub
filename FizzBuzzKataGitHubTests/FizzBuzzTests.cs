@@ -47,5 +47,18 @@ namespace FizzBuzzKataGitHubTests
             // Assert
             Assert.Equal(Buzz, output);
         }
+
+        [Fact]
+        public void InputIsFifteen_ShouldReturnFizzBuzz()
+        {
+            // Arrange
+            var c = new FizzBuzzKataGitHub.Converter();
+
+            // Act
+            string output = c.Convert(15);
+
+            // Assert
+            Assert.Equal(FizzBuzz, output);
+        }
     }
 }
